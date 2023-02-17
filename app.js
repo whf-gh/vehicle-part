@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 const port = process.env.PORT || 8081;
-const extern_url = process.env.RENDER_EXTERN_URL || `http://127.0.0.1:${port}`;
+const extern_url = process.env.RENDER_EXTERNAL_URL || `http://127.0.0.1:${port}`;
 
 var htxt;
 var txtf="style='font-size:50px'";
@@ -20,7 +20,7 @@ var txt8="<input type='submit' style='font-size:50px' value='Pay'></form></body>
 var server = app.listen(port, function () {
   var host = server.address().address;
   var port = server.address().port;
-  console.log(`listen at ${extern_url}:${port}`);
+  console.log(`listen at ${extern_url}`);
 })
 
 var io = require('socket.io')(server);
