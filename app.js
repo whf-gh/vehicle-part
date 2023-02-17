@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
-const env = process.env;
+const env = JSON.stringify(process.env);
 
 app.get("/", (req, res) => res.type('html').send(html));
 
