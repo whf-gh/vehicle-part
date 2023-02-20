@@ -8,7 +8,7 @@ var txtf="style='font-size:50px'";
 var txt0=`<html><head><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'></head><body><form action='${extern_url}/search' style='font-size:50px' method='GET'>`;
 var txt1=`<html><body><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'><form action='${extern_url}/pay' style='font-size:50px' method='GET'>`;
 var txt2='<br><br>Pleaes input the last several signs of your vehicle license number.';
-var txt3="<br><input type='text' style='font-size:50px' name='VL ";
+var txt3="<br><input type='text' style='font-size:50px' name='VL";
 var txt4="' value='";
 var txt5;
 var txt6="'>"
